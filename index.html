@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="topNav">
+        <div class="wrapper">
+          <div class="topNav">
+            <div class="left">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+
+              <div class="burger">
+                <button>
+                  <i class="fas fa-grip-lines"></i>
+                </button>
+              </div>
+            </div>
+
+            <script>
+              ;(() => {
+                const burger = document.querySelector('.burger')
+                const nav = document.querySelector('.left ul')
+                const links = nav.querySelectorAll('a')
+
+                burger.addEventListener('click', () => {
+                  nav.classList.toggle('show')
+                })
+
+                links.forEach((link) => {
+                  link.addEventListener('click', () => {
+                    nav.classList.remove('show')
+                  })
+                })
+              })()
+            </script>
+
+            <div class="right">
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-sign-in"></i> Login</a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-user-edit"></i> Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="header">
+        <div class="wrapper">
+          <div class="header">
+            <div class="logo">
+              <a href="#">
+                <h1>SHOP</h1>
+              </a>
+            </div>
+
+            <div class="search">
+              <form action="">
+                <input type="text" placeholder="Search" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="categories">
+        <div class="wrapper">
+          <div class="categories">
+            <ul>
+              <li><a href="collections">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Animal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="hero">
+        <div class="left">
+          <div>
+            <h2 class="heading">Welcome to SHOP</h2>
+            <p class="subtitle">SMART - TRENDY</p>
+            <button class="button cta btn">SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <img
+            src="https://img.freepik.com/free-photo/fashion-clothing-hangers-show_1153-5492.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      ;(() => {
+        const hero = document.getElementById('hero')
+        const header = document.getElementById('main-header')
+
+        function listener() {
+          hero.style.minHeight = `calc(100vh - ${header.offsetHeight * 2}px)`
+          hero.style.maxHeight = `calc(100vh - ${header.offsetHeight}px)`
+          hero.style.height = `100%`
+        }
+
+        window.addEventListener('resize', listener)
+        document.addEventListener('DOMContentLoaded', listener)
+      })()
+    </script> -->
+
+    <div id="collections">
+      <div class="wrapper">
+        <div class="collections">
+          <div class="heading">
+            <h2>MEN'S COLLECTION</h2>
+          </div>
+
+          <div class="content">
+            <div class="cards">
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Jeans Pant</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Jeans Pant</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://d1b5h9psu9yexj.cloudfront.net/45085/Levi---s-Premium-511-Slim-Fit-Men---s-Jeans_20210518-160540_full.jpeg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Jeans Pant</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <button class="button-red">Explore All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="collections">
+      <div class="wrapper">
+        <div class="collections">
+          <div class="heading">
+            <h2>Women'S COLLECTION</h2>
+          </div>
+
+          <div class="content">
+            <div class="cards">
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Burqa</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Burqa</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://preview.free3d.com/img/2016/05/2162647063903340454/yv1b8711.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Burqa</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 200</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <button class="button-red">Explore All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="collections">
+      <div class="wrapper">
+        <div class="collections">
+          <div class="heading">
+            <h2>Animal'S COLLECTION</h2>
+          </div>
+
+          <div class="content">
+            <div class="cards">
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Cat Home</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+
+                <h3 class="name">Cat Home</h3>
+
+                <div class="rating">******</div>
+
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+
+              <div class="card">
+                <a class="img" href="#">
+                  <img
+                    src="https://static-01.daraz.com.bd/p/9a71f9237ab7c215307aab6e7cdb7789.jpg"
+                    alt=""
+                  />
+                </a>
+                <h3 class="name">Cat Home</h3>
+                <div class="rating">******</div>
+                <div class="price">BDT 129</div>
+                <button class="btn button-round">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <button class="button-red">Explore All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="whyUs">
+      <div class="wrapper">
+        <h2 class="boss-heading">Why You Choose Us?</h2>
+
+        <div class="content">
+          <div class="card">
+            <i class="far fa-user-headset icon"></i>
+            <p class="text">24/7 Customer Support</p>
+          </div>
+
+          <div class="card">
+            <i class="far fa-shipping-fast icon"></i>
+            <p class="text">Free Shipping</p>
+          </div>
+
+          <div class="card">
+            <i class="far fa-shield-check icon"></i>
+            <p class="text">Secure and Safe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ourPartners">
+      <div class="wrapper">
+        <h2 class="boss-heading">Our Partners</h2>
+        <div class="content">
+          <img src="./images/G.svg" alt="" />
+          <img src="./images/F.png" alt="" />
+          <img src="./images/A.svg" alt="" />
+          <img src="./images/G.svg" alt="" />
+          <img src="./images/F.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="newsletter">
+          <p>Subscribe to get the free delivery and more discounts</p>
+
+          <div class="content">
+            <input type="email" name="" id="" />
+            <button class="button-red">Send</button>
+          </div>
+        </div>
+
+        <p class="copyright">Designed by 7 UP ,All Rights Reserved</p>
+      </div>
+    </footer>
+
+
+
+
+    <script>
+      ;(() => {
+        const hero = document.getElementById('hero')
+        const header = document.getElementById('main-header')
+
+        function listener() {
+          hero.style.minHeight = `calc(100vh - ${header.offsetHeight * 2}px)`
+          hero.style.maxHeight = `calc(100vh - ${header.offsetHeight}px)`
+          hero.style.height = `100%`
+        }
+
+        window.addEventListener('resize', listener)
+        document.addEventListener('DOMContentLoaded', listener)
+      })()
+    </script>
+  </body>
+</html>
